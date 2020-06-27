@@ -1,0 +1,13 @@
+log/
+autoInterface-web/qualityPlatform-web.iml
+autoInterface-common/qualityPlatform-common.iml
+autoInterface-dao/qualityPlatform-dao.iml
+autoInterface-domain/qualityPlatform-domain.iml
+autoInterface-service/qualityPlatform-service.iml
+autoInterface.iml
+autoInterface-common/target/
+autoInterface-dao/target/
+autoInterface-domain/target/
+autoInterface-service/target/
+autoInterface-web/target/
+.idea
