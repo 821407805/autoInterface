@@ -7,8 +7,62 @@
     <groupId>com.yijiang</groupId>
     <artifactId>autoInterface</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>chapter5</module>
+    </modules>
 
     <packaging>pom</packaging>
+
+    <properties>
+        <testng.version>7.1.0</testng.version>
+        <extentreports.version>3.0.6</extentreports.version> <!--4.1.0-->
+        <testng-extentsreport.version>1.3.1</testng-extentsreport.version>
+        <relevantcodes.version>2.41.1</relevantcodes.version>
+        <moco-runner.version>1.1.0</moco-runner.version>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+            <dependency>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+                <version>${testng.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+            <dependency>
+                <groupId>com.aventstack</groupId>
+                <artifactId>extentreports</artifactId>
+                <version>${extentreports.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.vimalselvam/testng-extentsreport -->
+            <dependency>
+                <groupId>com.vimalselvam</groupId>
+                <artifactId>testng-extentsreport</artifactId>
+                <version>${testng-extentsreport.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+            <dependency>
+                <groupId>com.relevantcodes</groupId>
+                <artifactId>extentreports</artifactId>
+                <version>${relevantcodes.version}</version>
+            </dependency>
+
+
+            <!-- https://mvnrepository.com/artifact/com.github.dreamhead/moco-runner -->
+            <dependency>
+                <groupId>com.github.dreamhead</groupId>
+                <artifactId>moco-runner</artifactId>
+                <version>${moco-runner.version}</version>
+            </dependency>
+
+
+
+        </dependencies>
+    </dependencyManagement>
+
+
     <profiles>
 
     </profiles>
